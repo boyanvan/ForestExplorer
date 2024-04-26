@@ -1,0 +1,152 @@
+/*  Reset  */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*  Header  */
+.header {
+	position: fixed;
+	top: 0;
+
+	height: 75px;
+	width: calc(100%);
+	padding: 0 3%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 2px solid gray;
+	background-color: #335142;
+	z-index: 10;
+}
+
+.header .img {
+	width: 60px;
+	height: 60px;
+}
+
+.header .btn {
+	cursor: pointer;
+	border: none;
+	border-radius: 50%;
+  background-color: transparent;
+}
+
+.header .btn:hover {
+  background-color: #080;
+}
+
+.header .nav {
+	vertical-align: middle;
+}
+
+/*  dropdown  */
+
+.dropdown-content {
+	display: none;
+  position: absolute;
+  background-color: #335142;
+  border: #fff 2px solid;
+  padding: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.show {display:block;}
+
+/*  footer  */
+
+.footer {
+	height: 25px;
+	padding: 0 3%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #335142;
+	color: #fff;
+}
+
+.logo-text {
+	font-family: "Jim Nightshade", cursive;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 48px;
+	color: white;
+}
+
+/*  nav  */
+
+.nav ul {
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+.nav li {
+	display: inline-block;
+}
+
+.nav li + li {
+	margin-left: 50px;
+}
+
+.nav a {
+	text-decoration: none;
+	font-weight: 700;
+	color: white;
+	font-size: 14px;
+	position: relative;
+}
+
+.nav a::before {
+	content: "";
+	position: absolute;
+	bottom: -6px;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background-color: #fff;
+	visibility: hidden;
+  transform: scaleX(0);
+	transition: all 0.3s ease-in-out 0s;
+}
+
+.nav a:hover::before {
+	visibility: visible;
+	transform: scaleX(1);
+}
+
+/*  btn-submit  */
+.btn-submit {
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 13px 23px;
+  transition: box-shadow .2s,transform .1s;
+}
+
+.btn-submit:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.btn-submit:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+.btn-submit:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}

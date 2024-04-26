@@ -1,0 +1,80 @@
+/*  Reset  */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.box {
+	height: 100%;
+	padding: 80px 60px 60px;
+	border: 3px solid #8c8c8c;
+	border-radius: 25px;
+	display: flex;
+	flex-direction: column;
+/*	justify-content: space-between;*/
+	align-items: center;
+}
+
+.content {
+	margin: auto 0;
+}
+
+.list {
+	width: 100%;
+}
+
+.item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.item + .item {
+	margin-top: 20px;
+}
+
+/*  main  */
+
+.main {
+	margin-top: 75px;
+	padding: 3% 3%;
+	display: flex;
+}
+
+/*  robot  */
+
+.robot {
+	height: 600px;
+	width: 50%;
+}
+
+.robot .icon {
+	content: url('/assets/images/robot-icon.png');
+	width: 80px;
+	height: 80px;
+}
+
+.robot .name {
+	font-size: 24px;
+}
+
+/*  btn  */
+
+.btn-small {
+	padding: 5px;
+	height: 18px;
+}
+
+.btn-small .dots {
+	font-size: 32px;
+	line-height: 0;
+	margin-top: -9px;
+}
+
+/*  support  */
+
+.support {
+	height: 600px;
+	width: 50%;
+}
